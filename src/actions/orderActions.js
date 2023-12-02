@@ -34,11 +34,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.post(
-      `https://gg-6702.onrender.com/api/orders`,
-      order,
-      config
-    );
+    const { data } = await axios.post(`/api/orders`, order, config);
     dispatch({
       type: ORDER_CREATE_SUCCESS,
       payload: data,
@@ -68,10 +64,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://gg-6702.onrender.com/api/orders/${id}`,
-      config
-    );
+    const { data } = await axios.get(`/api/orders/${id}`, config);
     console.log("this is data ");
     console.log(data);
 
@@ -121,7 +114,7 @@ export const payOrder =
         },
       };
       const { data } = await axios.put(
-        `https://gg-6702.onrender.com/api/orders/${orderId}/pay`,
+        `/api/orders/${orderId}/pay`,
         paymentResult,
         config
       );
@@ -157,10 +150,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://gg-6702.onrender.com/api/orders/myorders`,
-      config
-    );
+    const { data } = await axios.get(`/api/orders/myorders`, config);
     console.log("this is data ");
     console.log(data);
 
@@ -193,10 +183,7 @@ export const listOrders = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://gg-6702.onrender.com/api/orders`,
-      config
-    );
+    const { data } = await axios.get(`/api/orders`, config);
     console.log("this is data ");
     console.log(data);
 
@@ -231,7 +218,7 @@ export const deliverOrder = (order) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `https://gg-6702.onrender.com/api/orders/${order._id}/deliver`,
+      `/api/orders/${order._id}/deliver`,
       {},
       config
     );

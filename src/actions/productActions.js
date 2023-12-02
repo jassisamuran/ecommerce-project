@@ -25,9 +25,7 @@ import {
 export const listProduct = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
-    const { data } = await axios.get(
-      `https://gg-6702.onrender.com/api/products`
-    );
+    const { data } = await axios.get(`/api/products`);
     // throw new Error("some erooe")
     dispatch({
       type: PRODUCT_LIST_SUCCESS,
@@ -47,9 +45,7 @@ export const listProduct = () => async (dispatch) => {
 export const listProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
-    const { data } = await axios.get(
-      `https://gg-6702.onrender.com/api/products/${id}`
-    );
+    const { data } = await axios.get(`/api/products/${id}`);
     // throw new Error("some erooe")
     dispatch({
       type: PRODUCT_DETAILS_SUCCESS,
@@ -80,10 +76,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.delete(
-      `https://gg-6702.onrender.com/api/products/${id}`,
-      config
-    );
+    const { data } = await axios.delete(`/api/products/${id}`, config);
     console.log(data);
 
     dispatch({
@@ -113,11 +106,7 @@ export const createProduct = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.post(
-      `https://gg-6702.onrender.com/api/products`,
-      {},
-      config
-    );
+    const { data } = await axios.post(`/api/products`, {}, config);
     console.log(data);
 
     dispatch({
@@ -151,7 +140,7 @@ export const updateProduct = (product) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `https://gg-6702.onrender.com/api/products/${product._id}`,
+      `/api/products/${product._id}`,
       product,
       config
     );
@@ -189,7 +178,7 @@ export const createProductReview =
         },
       };
       const { data } = await axios.post(
-        `https://gg-6702.onrender.com/api/products/${productId}/reviews`,
+        `/api/products/${productId}/reviews`,
         review,
         config
       );
@@ -213,9 +202,7 @@ export const createProductReview =
 export const listTopProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_TOP_REQUEST });
-    const { data } = await axios.get(
-      `https://gg-6702.onrender.com/api/products/${34}/top`
-    );
+    const { data } = await axios.get(`/api/products/${34}/top`);
     console.log(data);
     dispatch({
       type: PRODUCT_TOP_SUCCESS,
