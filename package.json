@@ -1,7 +1,7 @@
 {
   "homepage": "https://jassisamuran.github.io/ecommerce-project",
   "name": "proshop",
-  "proxy": "http://127.0.0.1:5000",
+  "proxy": "https://gg-6702.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
