@@ -5,6 +5,7 @@ A C++ program for analyzing ice cream parlour sales data, including monthly sale
 1. [Installation](#installation)
 2. [Features](#features)
 3. [File Structure](#file-structure)
+4. [Dependencies](#dependecies)
 
 ## Installation
 1. Clone the repository:
@@ -26,3 +27,13 @@ A C++ program for analyzing ice cream parlour sales data, including monthly sale
 3. **Most Popular Items**: Finds the most frequently sold item for each month.
 4. **Top Revenue-Generating Items**: Identifies the item with the highest revenue each month.
 5. **Order Statistics**: Provides minimum, maximum, and average order quantities for the most popular items each month.
+
+## Dependencies
+This program uses the following C++ libraries:
+   <iostream>: For standard input and output.
+   <fstream>: For file reading.
+   <sstream>: To parse CSV data.
+   <vector>: To store sales data records.
+   <map>: To track monthly sales, popular items, and revenue.
+   <iomanip>: For setting the precision of floating-point output.
+   <limits>: To set min/max limits for order statistics.
