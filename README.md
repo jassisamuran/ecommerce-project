@@ -11,8 +11,14 @@ A C++ program for analyzing ice cream parlour sales data, including monthly sale
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-project.git
-cd your-project
-g++ one.cpp -o sales_analysis
-./sales_analysis
+2. Navigate to the project directory:
+   ````bash
+   cd your-project
+3. Compile the code (if applicable):
+   ````bash
+   g++ one.cpp -o sales_analysis
+4: Run the program
+   ````bash
+   ./sales_analysis
 
 
