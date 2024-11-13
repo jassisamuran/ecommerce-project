@@ -30,10 +30,12 @@ A C++ program for analyzing ice cream parlour sales data, including monthly sale
 
 ## Dependencies
 This program uses the following C++ libraries:
-   ##<iostream>##: For standard input and output.
-   ##<fstream>: For file reading.
-   ##<sstream>: To parse CSV data.
-   <vector>: To store sales data records.
-   <map>: To track monthly sales, popular items, and revenue.
-   <iomanip>: For setting the precision of floating-point output.
-   <limits>: To set min/max limits for order statistics.
+
+- `<iostream>`: For standard input and output.
+- `<fstream>`: For file reading.
+- `<sstream>`: To parse CSV data.
+- `<vector>`: To store sales data records.
+- `<map>`: To track monthly sales, popular items, and revenue.
+- `<iomanip>`: For setting the precision of floating-point output.
+- `<limits>`: To set min/max limits for order statistics.
+
