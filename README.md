@@ -6,6 +6,7 @@ A C++ program for analyzing ice cream parlour sales data, including monthly sale
 2. [Features](#features)
 3. [File Structure](#file-structure)
 4. [Dependencies](#dependecies)
+5. [Example Output](#example-output)
 
 ## Installation
 1. Clone the repository:
@@ -38,4 +39,24 @@ This program uses the following C++ libraries:
 - `<map>`: To track monthly sales, popular items, and revenue.
 - `<iomanip>`: For setting the precision of floating-point output.
 - `<limits>`: To set min/max limits for order statistics.
+
+## Example Output
+
+#!/bin/bash\
+
+echo "Total Sales of Store: 5000.00"
+echo "Month-wise Sales Total:"
+echo "2024-10: 1500.50"
+echo "2024-11: 3500.20"
+
+echo "Most Popular Items for Each Month:"
+echo "2024-10: Item: SKU123 Quantity Sold: 50"
+echo "2024-11: Item: SKU456 Quantity Sold: 70"
+
+echo "Items Generating Most Revenue Each Month:"
+echo "2024-10: Item: SKU123 Revenue: 125.50"
+echo "2024-11: Item: SKU456 Revenue: 210.70"
+
+echo "Order Statistics for Most Popular Item Each Month:"
+echo "2024-10 SKU123, Min Orders: 5, Max Orders: 20, Average Orders: 12.33"
 
