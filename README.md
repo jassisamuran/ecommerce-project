@@ -42,21 +42,18 @@ This program uses the following C++ libraries:
 
 ## Example Output
 
-#!/bin/bash\
+   ````bash
+   Total Sales of Store: 5000.00
+   Month-wise Sales Total:
+   2024-10: 1500.50
+   2024-11: 3500.20
+   Most Popular Items for Each Month:
+   2024-10: Item: SKU123 Quantity Sold: 50
+   2024-11: Item: SKU456 Quantity Sold: 70
+   Items Generating Most Revenue Each Month:
+   2024-10: Item: SKU123 Revenue: 125.50
+   2024-11: Item: SKU456 Revenue: 210.70
+   Order Statistics for Most Popular Item Each Month:
+   2024-10 SKU123, Min Orders: 5, Max Orders: 20, Average Orders: 12.33
 
-echo "Total Sales of Store: 5000.00"
-echo "Month-wise Sales Total:"
-echo "2024-10: 1500.50"
-echo "2024-11: 3500.20"
-
-echo "Most Popular Items for Each Month:"
-echo "2024-10: Item: SKU123 Quantity Sold: 50"
-echo "2024-11: Item: SKU456 Quantity Sold: 70"
-
-echo "Items Generating Most Revenue Each Month:"
-echo "2024-10: Item: SKU123 Revenue: 125.50"
-echo "2024-11: Item: SKU456 Revenue: 210.70"
-
-echo "Order Statistics for Most Popular Item Each Month:"
-echo "2024-10 SKU123, Min Orders: 5, Max Orders: 20, Average Orders: 12.33"
 
