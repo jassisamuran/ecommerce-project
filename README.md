@@ -5,7 +5,7 @@ A C++ program for analyzing ice cream parlour sales data, including monthly sale
 1. [Installation](#installation)
 2. [Features](#features)
 3. [File Structure](#file-structure)
-4. [Dependencies](#dependecies)
+4. [Dependencies](#dependencies)
 5. [Example Output](#example-output)
 
 ## Installation
